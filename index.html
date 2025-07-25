@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Urban Air-Quality & Cloud-Seeding Impacts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Air Pollution in Major Cities</h1>
+    <p class="subtitle">and how cloud seeding might help—or hurt</p>
+  </header>
+
+  <section id="chart-section">
+    <h2>Average PM<sub>2.5</sub> (2024)</h2>
+    <canvas id="pmChart"></canvas>
+  </section>
+
+  <section id="cloud-seeding">
+    <h2>Cloud Seeding 101</h2>
+    <p>
+      Cloud seeding injects silver iodide or salt into clouds to trigger
+      rainfall. Potential benefits include <em>particulate wash-out</em> (reducing
+      PM<sub>2.5</sub>) and drought relief, but critics highlight unknown long-term
+      ecological side-effects.
+    </p>
+    <ul>
+      <li>✔ Can lower dust and smoke concentrations locally for 24-48 h</li>
+      <li>✖ May shift pollution downwind, not remove it globally</li>
+      <li>✖ Silver accumulation in soil/water is still under study</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Data snapshot: WHO &amp; OpenAQ, Jan 1 – Dec 31 2024.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="data.js"></script>
+</body>
+</html>
