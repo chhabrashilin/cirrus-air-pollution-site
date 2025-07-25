@@ -1,0 +1,7 @@
+:root { font-family: system-ui, sans-serif; color-scheme: light dark; }
+body { margin: 0; line-height: 1.6; }
+header { text-align: center; padding: 2rem 1rem; background: #1e88e5; color: #fff; }
+.subtitle { font-weight: 300; margin-top: -0.5rem; }
+section { padding: 2rem 1rem; max-width: 800px; margin: auto; }
+footer { text-align: center; padding: 1rem; font-size: 0.8rem; }
+canvas { width: 100% !important; height: 400px !important; }
