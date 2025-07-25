@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: air-quality
+spec:
+  replicas: 2
+  selector:
+    matchLabels: app: air-quality
+  template:
+    metadata:
+      labels:
+        app: air-quality
+    spec:
+      containers:
+        - name: web
+          image: harbor.cirrus.ucar.edu/<PROJECT>/air-quality:latest
+          ports:
+            - containerPort: 80
+          resources:
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
