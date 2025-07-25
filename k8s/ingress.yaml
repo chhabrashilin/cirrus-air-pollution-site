@@ -1,18 +1,18 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: air-quality
+  name: skywash
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-    - host: air.<your-choice>.cirrus.ucar.edu
+    - host: skywash.<your-subdomain>.cirrus.ucar.edu
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: air-quality
+                name: skywash
                 port:
                   number: 80
